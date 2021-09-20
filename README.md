@@ -35,13 +35,13 @@ Feel free to contact me if you have questions or need help setting everything up
 
 ### Done
 
-visit [localhost](localhost)
+visit [http://localhost](localhost)
 
 # Licence:
 
 for using my code you have to:
 - send me a link to your project
-cypherp01nt@protonmail.com
+teicheld@webl.de
 
 
 
