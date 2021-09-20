@@ -1,0 +1,13 @@
+CREATE DATABASE public_drop;
+USE public_drop;
+CREATE TABLE users (id INT UNSIGNED NOT NULL AUTO_INCREMENT, name VARCHAR(50), password VARCHAR(50), pgp_pub_key TEXT, PRIMARY KEY (id));
+CREATE TABLE listings (id INT UNSIGNED NOT NULL AUTO_INCREMENT, item VARCHAR(50), quantity VARCHAR(50), price VARCHAR(50), vendor VARCHAR(50), client VARCHAR(50), documentation_link TEXT, price_btc DECIMAL(13,10), timestamp_euro2btc_request INT UNSIGNED, timestamp_double_client_prevention INT UNSIGNED, timestamp_no_doc_link INT UNSIGNED, timestamp_escrow_to_client INT UNSIGNED, timestamp_escrow_to_vendor INT UNSIGNED, image VARCHAR(110), status VARCHAR(30), latitude FLOAT(6,4), longitude FLOAT(6,4), PRIMARY KEY (id));
+CREATE TABLE messages (id INT UNSIGNED NOT NULL AUTO_INCREMENT, creator VARCHAR(50), topic VARCHAR(50), recipient VARCHAR(50), message TEXT, PRIMARY KEY (id));
+CREATE TABLE reputations (id INT UNSIGNED NOT NULL AUTO_INCREMENT, creator VARCHAR(50), target VARCHAR(50), rating SMALLINT, message TEXT, listingId INT UNSIGNED, PRIMARY KEY (id));
+CREATE TABLE escrow_keys (id INT UNSIGNED NOT NULL AUTO_INCREMENT, address VARCHAR(35), private_key VARCHAR(53), balance INT UNSIGNED, owner VARCHAR(50), PRIMARY KEY (id));
+CREATE TABLE suggestion_names (id INT UNSIGNED NOT NULL AUTO_INCREMENT, name VARCHAR(25), PRIMARY KEY (id));
+LOAD DATA INFILE '/var/www/html/seed_files/names.txt' INTO TABLE suggestion_names (name);
+LOAD DATA INFILE '/var/www/html/seed_files/testnet_keypairs.txt' INTO TABLE escrow_keys FIELDS TERMINATED BY "," ENCLOSED BY '"';
+CREATE USER 'the_anarchist'@'localhost' IDENTIFIED BY 'Aa,asdf;lkjasdf;lkj';
+GRANT SELECT, INSERT, UPDATE, DELETE ON * . * TO 'the_anarchist'@'localhost';
+

@@ -1,0 +1,42 @@
+- vendor bond
+- check if user has javascript activated, and indicate that he is free to not trust me.
+- signed vedors -> spammer vendor prevention
+- reputation, trustscore
+- escrow auto release timer
+- login through pgp-pub-key-message
+- this service requires onionshare and pgp. YOU DONT WANT TO TRUST ANYBODY.
+- statistik
+- sort (with sql) reputation, price, price per unit
+- freeze accounts, which are refreshing the double_client_prevention_timer or prevent refreshing
+- prevent http request attacks only let edit sql entries, which are linked with the $_SESSION["user"] var
+- css box_long is not fitting in the smartphone view
+- index.php: "Lade die ungefaehre Positionen aller Angebote fuer die Integration in dein GPS herunter" > always on the ground
+- autorelease
+- translate into english > multilanguage option
+- if you reload the page after inserting a article the article gets inserted twice.
+- add request feature to anable peer to peer logistics
+- https://linuxiac.com/how-to-install-lets-encrypt-ssl-certificates-using-certbot/
+- if blockchain.info is offline (or the url is invalid) the article gets marked as payed.
+- autoencryption of all private userinput
+- signchain
+- change online api to bitocoin full node
+- autoencrypt
+- lightning
+- implement ddos protection
+- account reputation transfer through pgp verification
+- exchange SESSION-id check with user-specific limitations
+- geocoder or coordinates-> self-> list with cities and corresponding coordinates
+- pay with intern funds
+- motivate to use gerade prices to make it free to pay with intern funds(lighning?)
+- withdraw money throug clicking on the account balance
+- autorelease escrow
+- replace the "Befreie Escrow" button with the message: "documentationlink has been requestet, without reaction of the vendor the trade gets canceld in xx:xx hours (with a mark in his reputation";
+- vendor bond zum schutz der kunden. um busts teuer zu machen.
+- channel auf Keybase.io freenet und i2p
+- set zuseatzlich 
+- ein Kunde hat bezahlt und ... lange ladezeiten durch die 3rd party escrow balance request. -> get from database
+- reloading page makes it possible to send reputation multiple times
+- find link for advertising: buggyplanet: deutschland: gesetz ueberwachung von paketsendungen
+https://owasp.org/www-project-top-ten/
+harden nginx
+exchange errormessages through automated messages to me.

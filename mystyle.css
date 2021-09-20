@@ -1,0 +1,181 @@
+
+* {
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+body {
+  background-image: url('trees-1209660_1280.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+input {
+  margin: 8px 0;
+  background-color: rgba(203,206,213,0.25);
+}
+
+#textBlue {
+  color: blue;
+}
+textarea {
+ background-color: rgba(255,155,0,0.12);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+}
+
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: grey;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  color: green;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: green;
+  color: black;
+}
+
+.css_box_medium {
+  margin: auto;
+  float: center;
+  padding: 0px;
+  width: 250px;
+  background-color:rgba(11,31,40,0.3);
+  color:rgba(255,255,255,1);
+  border: 0px solid green;
+  transition-duration: 4s;
+  box-shadow: 0px 0px 5px 5px rgba(11,31,40,0.3);
+}
+
+
+.css_box_long {
+  margin: auto;
+  float: center;
+  padding: 0px;
+  width: 700px;
+  background-color:rgba(11,31,40,0.3);
+  color:rgba(255,255,255,1);
+  border: 0px solid green;
+  transition-duration: 4s;
+  box-shadow: 0px 0px 5px 5px rgba(11,31,40,0.3);
+}
+
+
+/* unvisited link */
+.css_box_long a:link {
+  color: white;
+}
+
+.css_box_long img {
+	width: 40%
+}
+
+/* visited link */
+.css_box_long a:visited {
+  color: white;
+}
+
+/* mouse over link */
+.css_box_long a:hover {
+  color: blue;
+}
+
+/* selected link */
+.css_box_long a:active {
+  color: grey;
+}
+
+
+.css_box_small {
+  margin: auto;
+  float: center;
+  padding: 0px;
+  width: 180px;
+  background-color:rgba(11,31,40,0.3);
+  color:rgba(255,255,255,1);
+  border: 0px solid green;
+  transition-duration: 7s;
+  box-shadow: 0px 0px 5px 5px rgba(11,31,40,0.3);
+}
+
+.css_box_small img {
+	width: 100%
+}
+
+.css_box_small:hover {
+  box-shadow: 0px 0px 15px 5px rgba(25,85,36,0.2);
+}
+
+/* unvisited link */
+.css_box_small a:link {
+  color: white;
+  transition-duration: 7s;
+}
+
+/* visited link */
+.css_box_small a:visited {
+  color: white;
+}
+
+/* mouse over link */
+.css_box_small a:hover {
+  color:rgba(220,255,220,0.8);
+}
+
+/* selected link */
+.css_box_small a:active {
+  color: grey;
+}
+
+.button {
+  background-color:rgba(79,101,112,0.3);
+  padding: 5px 10px;
+  margin: 4px 2px;
+  color: white;
+  border: 0px solid #4CAF50;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  box-shadow: 0 30px 0px 0 rgba(220,255,220,0.07) inset;
+}
+
+.inconspicuous a {
+	font-size: 8px;
+}
