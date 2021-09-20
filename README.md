@@ -35,7 +35,7 @@ Feel free to contact me if you have questions or need help setting everything up
 
 ### Done
 
-visit [http://localhost](localhost)
+visit [localhost](http://localhost)
 
 # Licence:
 
